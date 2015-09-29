@@ -58,10 +58,10 @@ def create_fanart(icons_folder="img", output_file="fanart.jpg"):
 
 
 def shift(i, delta, max_i):
-    if (i + delta) < max_i:
+    if (i + delta) <= max_i:
         new_i = i + delta
     else:
-        new_i = i + delta - max_i
+        new_i = i + delta - max_i - 1
     return new_i
 
 
